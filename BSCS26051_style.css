@@ -1,0 +1,270 @@
+/* General Resets and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+}
+
+/* Header & Navbar */
+header {
+    background-color: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* Page 1: Hero / Banner Sections (Home) */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('BSCS23099_image0.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-section {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('BSCS23099_image1.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-content h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* General Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Page 2: Products Section */
+.products-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #111827;
+}
+
+/* Product Box Spanning Horizontally */
+.product-box {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #e5e7eb;
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-box:hover {
+    transform: translateY(-3px);
+}
+
+.product-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-name {
+    font-size: 24px;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.status-in {
+    color: #059669;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.status-out {
+    color: #dc2626;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.product-desc {
+    color: #4b5563;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Page 3 & Footer: Contact Details */
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.styled-contact-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.contact-info-list {
+    list-style: none;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.contact-info-list li {
+    margin-bottom: 12px;
+    color: #374151;
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+.social-btn:hover {
+    opacity: 0.85;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.facebook { background-color: #1877f2; }
+.instagram { background-color: #e4405f; }
+.linkedin { background-color: #0a66c2; }
+
+/* Section 3 - Footer */
+footer {
+    background-color: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.footer-content p {
+    margin-bottom: 8px;
+}
